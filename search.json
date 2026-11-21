@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Shark Attacks",
+    "section": "",
+    "text": "The Global Shark Attack File (GSAF) is a long-running record of reported shark-human incidents around the world. It offers a way to explore where and when these events have been recorded, while keeping individual incidents in a broader context.\nFear of sharks is understandable, but dramatic stories can make attacks seem far more common than they are. In reality, shark attacks are rare, and fatal attacks rarer still; recorded incidents should not be confused with the everyday risk of going in the water.\nExplore the Map to see recorded attack counts by country, or visit Trends to see how annual counts change over time. These pages show patterns in the records, not a prediction of the risk to any one person."
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Map",
+    "section": "",
+    "text": "# A tibble: 22 × 3\n   Activity      Fatal_clean attacks\n   &lt;chr&gt;         &lt;chr&gt;         &lt;int&gt;\n 1 Bathing       Fatal            31\n 2 Bathing       Non-fatal        35\n 3 Body boarding Fatal            14\n 4 Body boarding Non-fatal        48\n 5 Diving        Fatal            14\n 6 Diving        Non-fatal        78\n 7 Fishing       Fatal            32\n 8 Fishing       Non-fatal       337\n 9 Scuba diving  Fatal            12\n10 Scuba diving  Non-fatal        50\n# ℹ 12 more rows"
+  }
+]
