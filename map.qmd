@@ -39,5 +39,9 @@ ggplot(world_attacks, aes(long, lat, group = group, fill = attacks)) +
 
 ```{r}
 attacks |>
-  count(Fatal_clean, name = "attacks")
+  filter(Fatal_clean != "Unknown") |>
+  count(Activity, Fatal_clean, name = "attacks") |>
+  group_by(Activity) |>
+  filter(sum(attacks) >= 50) |>
+  ungroup()
 ```

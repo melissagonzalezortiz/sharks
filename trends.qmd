@@ -1,0 +1,22 @@
+---
+title: "Trends"
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+```
+
+```{r}
+attacks <- read_rds("data/attacks.rds")
+```
+
+```{r}
+attacks |>
+  filter(Year != 2018) |>
+  count(Year, name = "attacks") |>
+  ggplot(aes(x = Year, y = attacks)) +
+  geom_line() +
+  labs(x = "Year", y = "Number of attacks") +
+  theme_minimal()
+```
